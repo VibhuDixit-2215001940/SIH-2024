@@ -25,7 +25,7 @@ $Some Add On Features<br>
 Features that we have to add in this que::<br>
 1.Payment gateway for student  <br>                    
 2.Live status for stud <br>                       
-3.Feedabck <br>                                      
+3.Feedabck <br>    
 4.Multi-Format Support<br>                        
 5.Optical Character Recognition (OCR)*optional <br>   
 6.User Roles & Permissions  <br>                 
@@ -33,13 +33,13 @@ Features that we have to add in this que::<br>
 8.Multi-Language Support <br>                     
 9.Interactive ui&ux   <br>                           
 10.Document Expiry Notification <br>              
-11.Interactive Dashboard <br>                       
+11.Interactive Dashboard<br> 
 12.4pannels(student,doc. verification employee,finacial employee & admin)<br>
 13.Document compression for less data handling<br>     
-14. Chatbots and Live Chat for help    <br>      
-15.Responsive Design<br>                            
+14. Chatbots and Live Chat for help<br>      
+15.Responsive Design<br> 
 16.Drag and Drop Functionality<br>                 
 17.Voice Search and Commands<br>                   
-18.Govt. notifications <br>                          
+18.Govt. notifications<br>  
 19. Blurr Pic Rejection<br>
 20.Adhar no. verification.<br>
