@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(196, 255, 235, 0.299);
+    border-bottom: 2px solid black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo p {
+    margin-top: 45px;
+    font-size: small;
+    font-style: italic;
+}
+
+.logo img {
+    margin-left: 30px;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 17px;
+    transition: .5s ease;
+}
+
+.link a:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+}
+
+.sign img {
+    height: 40px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.sign a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.764);
+    font-size: 17px;
+    transition: .5s ease;
+}
+
+.sign a:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    background-color: #0e405a;
+    color: white;
+    box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.latestnews {
+    display: flex;
+    color: black;
+    width: 500px;
+    padding: 5px;
+    margin-left: 10px;
+    height: 20px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.para {
+    display: inline;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.para p {
+    animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    background-color: #023047;
+    margin-top: 700px;
+}
+
+.first {
+    display: flex;
+    background-color: #023047;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.lines {
+    display: flex;
+    color: white;
+    font-weight: 400;
+    flex-direction: column;
+}
+
+.lines a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.about img {
+    height: 100px;
+    width: 300px;
+}
+
+.aboutus {
+    display: flex;
+    color: white;
+    width: 400px;
+}
+
+
+.sociallinks {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.sociallinks img {
+    width: 35px;
+    height: 35px;
+}
+
+.sociallinks p {
+    color: white;
+}
+
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    color: white;
+}
+
+.playstore {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    background-color: white;
+    font-weight: 500;
+    padding: 15px;
+    height: 200px;
+    color: black;
+}
+
+.qr {
+    display: flex;
+    flex-direction: column;
+}
+
+.qr img {
+    width: 150px;
+}
+
+.play {
+    margin-top: 70px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.social input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 310px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.input button {
+    outline: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    width: 47px;
+    height: 45px;
+}
+
+.input button img {
+    margin-top: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+hr {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.safety {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.security {
+    display: flex;
+    background-color: rgb(205, 133, 0);
+    height: 50px;
+    width: 400px;
+    color: white;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+.securityIcon img {
+    height: 70px;
+}
+
+.iso {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.iso img {
+    height: 70px;
+}
+
+.point {
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+.points {
+    display: flex;
+    gap: 20px;
+}
+
+.points a {
+    text-decoration: none;
+    color: white;
+}
+.copy{
+    margin-left: 270px;
+}
+.copy p {
+    color: white;
+}
