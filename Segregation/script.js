@@ -85,7 +85,6 @@ function add() {
   let lc = document.createElement("div");
   lc.className = "linecontent";
   lc.style.backgroundColor = `${color[count % color.length]}`;
-  console.log(color[0]);
 
   let d1 = document.createElement("div");
   d1.className = "Sno";
@@ -113,9 +112,7 @@ function add() {
   d3.appendChild(el3);
   lc.appendChild(d3);
 
-  console.log(lc);
   localStorage.setItem("lastLoadTime", text);
-  console.log(content);
   content[0].appendChild(lc);
 
   // Increment and store count in localStorage
@@ -157,55 +154,77 @@ arr2=["Attero Recycling",
   "Saahas Zero Waste",
   "Eco Eclectic Technologies",
   "Banyan Nation",
-  "TrashCon"]
-
-const third = document.getElementsByClassName("thirdHalf");
-
-const trackingContainer = document.createElement("div");
-trackingContainer.className = "tracking-container";
-// Set the inner HTML for the tracking container
-trackingContainer.innerHTML = `
+  "TrashCon"];
+  
+  
+  trackcolor=["#3cb371","#ff0000","#fbc02d"]
+  const third = document.getElementsByClassName("thirdHalf");
+  let wid;
+  let com;
+  if(trackcolor[trackcount % trackcolor.length]=="#3cb371")
+  {
+    console.log(trackcolor[trackcount % trackcolor.length]);
+    
+        wid=90;
+        com="#3cb371";
+  }
+  else if(trackcolor[trackcount % trackcolor.length]=="#ff0000")
+  {
+    wid=25;
+  }
+  else{
+    wid=60;
+  }
+  console.log(wid);
+  console.log(trackcolor[trackcount%trackcolor.length]);
+  
+  
+  const trackingContainer = document.createElement("div");
+  trackingContainer.className = "tracking-container";
+  // Set the inner HTML for the tracking container
+  trackingContainer.innerHTML = `
     <div class="tracking-header">
-        <div>Waste-Id - #${trackcount}</div>
+    <div>Waste-Id - #${trackcount}</div>
         <div>Picked on, ${text}</div>
         <div>From:- ${arr1[trackcount % arr1.length]}</div>
     </div>
-
+    
     <div class="progress-bar">
-        <div class="progress-line"></div>
-        <div class="progress-line-filled" id="progress-line-filled"></div>
-
-        <div class="step completed">
-            <div class="step-icon">🚛</div>
-            <div class="step-label">Waste Picked-Up</div>
-        </div>
-
-        <div class="step Segregated">
-            <div class="step-icon">♻️</div>
-            <div class="step-label">Segregated<br>on ${fDate}</div>
-        </div>
+    <div class="progress-line"></div>
+    <div class="progress-line-filled" id="progress-line-filled" style="background-color:${trackcolor[trackcount % trackcolor.length]};width:${wid}%"></div>
+    
+    <div class="step completed">
+    <div class="step-icon">🚛</div>
+    <div class="step-label">Waste Picked-Up</div>
+    </div>
+    
+    <div class="step Segregated">
+    <div class="step-icon">♻️</div>
+    <div class="step-label">Segregated<br>on ${fDate}</div>
+    </div>
 
         <div class="step active">
             <div class="step-icon">🏭</div>
             <div class="step-label">Disposed to be by <br>${arr2[trackcount%arr2.length]}</div>
-        </div>
-
-        <div class="step">
-            <div class="step-icon">&#x2714;</div>
+            </div>
+            
+            <div class="step">
+            <div class="step-icon" style="background-color:${com}">&#x2714;</div>
             <div class="step-label">Completed</div>
-        </div>
-    </div>
-`;
-
-// Append the tracking container to the thirdHalf div
-function addTrack() {
-  third[0].appendChild(trackingContainer);
-  trackcount++;
-  updateTrack();
-}
-
-function showTrack() {
-  if (localStorage.getItem("track")) {
+            </div>
+            </div>
+            `;
+            const progressFilled=document.getElementsByClassName("progress-line-filled");            
+            
+            // Append the tracking container to the thirdHalf div
+            function addTrack() {
+              third[0].appendChild(trackingContainer);
+              trackcount++;
+              updateTrack();
+            }
+            
+            function showTrack() {
+              if (localStorage.getItem("track")) {
     third[0].innerHTML = localStorage.getItem("track");
     localStorage.getItem("trackcount");
   }
