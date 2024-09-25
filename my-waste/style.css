@@ -1,0 +1,71 @@
+.section section--natural-spacing site-header site-search style-scheme--1{
+    display: flex;
+    background-color: red;
+}
+.navbar {
+    display: flex;
+    background-color: rgba(196, 255, 235, 0.299);
+    border-bottom: 2px solid black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.logo img {
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 17px;
+    transition: .5s ease;
+}
+
+.link a:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+}
+
+.sign img {
+    height: 40px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.sign a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.764);
+    font-size: 17px;
+    transition: .5s ease;
+}
+
+.sign a:hover {
+    transform: scale(1.2);
+    color: black;
+}
